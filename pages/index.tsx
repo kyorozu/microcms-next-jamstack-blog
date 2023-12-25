@@ -1,32 +1,6 @@
 import Link from "next/link";
 import { client } from "../libs/client";
-
-type Blog = {
-  id: string;
-  title: string;
-  body: string;
-  category: {
-    id: string,
-    name: string,
-    createdAt: string,
-    updatedAt: string,
-    publishedAt: string,
-    revisedAt: string,
-  }
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  revisedAt: string;
-}
-
-type Category = {
-  id: string;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  revisedAt: string;
-  name: string;
-}
+import { Blog, Category } from "./types";
 
 export default function Home({ blog, category }: { blog: Blog[], category: Category[] }) {
   console.log('blog: ', blog);

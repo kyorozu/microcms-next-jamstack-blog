@@ -1,23 +1,6 @@
 import { client } from "../../libs/client";
 import styles from "../../styles/Home.module.scss";
-
-type Blog = {
-  id: string;
-  title: string;
-  body: string;
-  category: {
-    id: string,
-    name: string,
-    createdAt: string,
-    updatedAt: string,
-    publishedAt: string,
-    revisedAt: string,
-  };
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
-  revisedAt: string;
-};
+import { Blog } from "../types";
 
 export default function BlogId({ blog }: { blog: Blog }) {
   return (
