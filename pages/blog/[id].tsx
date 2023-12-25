@@ -5,6 +5,14 @@ type Blog = {
   id: string;
   title: string;
   body: string;
+  category: {
+    id: string,
+    name: string,
+    createdAt: string,
+    updatedAt: string,
+    publishedAt: string,
+    revisedAt: string,
+  };
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
@@ -16,6 +24,7 @@ export default function BlogId({ blog }: { blog: Blog }) {
     <main className={styles.main}>
       <h1 className={styles.title}>{blog.title}</h1>
       <p className={styles.publishedAt}>{blog.publishedAt}</p>
+      <p>{blog.category && blog.category.name}</p>
       <div
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,
