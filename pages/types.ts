@@ -1,5 +1,3 @@
-
-
 export type Blog = {
   id: string;
   title: string;
@@ -25,4 +23,9 @@ export type Category = {
   publishedAt: string;
   revisedAt: string;
   name: string;
+}
+
+export type TocItem = {
+  text: string;
+  id: string;
 }
