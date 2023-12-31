@@ -10,6 +10,7 @@ export type Blog = {
     publishedAt: string,
     revisedAt: string,
   }
+  toc_visible: boolean;
   createdAt: string;
   updatedAt: string;
   publishedAt: string;

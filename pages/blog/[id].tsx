@@ -11,7 +11,9 @@ export default function BlogId({ blog }: { blog: Blog }) {
       <h1 className={styles.title}>{blog.title}</h1>
       <p className={styles.publishedAt}>{blog.publishedAt}</p>
       <p>{blog.category && blog.category.name}</p>
-      <TableOfContents toc={toc} />
+      {blog.toc_visible && (
+        <TableOfContents toc={toc} />
+      )}
       <div
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,
