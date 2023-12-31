@@ -1,4 +1,4 @@
-import { TocItem } from "@/pages/types";
+import { TocItem } from "@/types";
 
 export const TableOfContents = ({ toc }: { toc: TocItem[] }) => {
   return (

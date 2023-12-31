@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { Pagination } from '../../../components/Pagination';
-import { client } from "../../../libs/client";
-import { Blog } from '@/pages/types';
+import { Pagination } from '@/components/Pagination';
+import { client } from "@/libs/client";
+import { Blog } from '@/types';
 
 const PER_PAGE = 5;
 

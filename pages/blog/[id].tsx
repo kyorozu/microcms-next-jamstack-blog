@@ -1,7 +1,7 @@
 import { renderToc } from "@/libs/render-toc";
-import { client } from "../../libs/client";
-import styles from "../../styles/Home.module.scss";
-import { Blog } from "../types";
+import { client } from "@/libs/client";
+import styles from "@/styles/Home.module.scss";
+import { Blog } from "@/types";
 import { TableOfContents } from '@/components/TalbleOfContent';
 
 export default function BlogId({ blog }: { blog: Blog }) {

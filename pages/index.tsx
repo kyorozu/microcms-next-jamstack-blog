@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { client } from "../libs/client";
-import { Blog, Category } from "./types";
+import { client } from "@/libs/client";
+import { Blog, Category } from "@/types";
 import { Pagination } from "@/components/Pagination";
 
 export default function Home({ blog, category, totalCount }: { blog: Blog[], category: Category[], totalCount: number }) {
